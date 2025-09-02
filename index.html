@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momin Ahmed Rezg Alwawi - Portfolio</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand fw-black" href="#">Momin Alwawi</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6">
+            <div class="hero-content animate-fade-in-up">
+              <h1 class="hero-title">
+                Hi, I'm <span class="text-primary">Momin Ahmed</span>
+              </h1>
+              <p class="hero-subtitle">
+                Web Computing Graduate & Full-Stack Developer
+              </p>
+              <p class="hero-description">
+                Passionate about creating modern, responsive web applications
+                with clean code and exceptional user experiences. Specialized in
+                frontend technologies with a growing expertise in full-stack
+                development.
+              </p>
+              <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary btn-lg me-3"
+                  >View My Work</a
+                >
+                <a href="#contact" class="btn btn-outline-primary btn-lg"
+                  >Get In Touch</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="hero-image">
+              <div class="profile-image-container">
+                <img
+                  src="css/img/100.jpg"
+                  alt="Momin Ahmed Rezg Alwawi"
+                  class="profile-image"
+                />
+                <div class="profile-badge">
+                  <span>Web Dev</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5">
+            <h2 class="section-title">About Me</h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p class="lead mb-4">
+              I'm a Web Computing graduate with a passion for creating
+              innovative web solutions. My journey in web development has
+              equipped me with a comprehensive understanding of both frontend
+              and backend technologies.
+            </p>
+            <p class="mb-4">
+              I specialize in building responsive, user-friendly applications
+              using modern frameworks and best practices. My goal is to bridge
+              the gap between design and functionality, creating seamless
+              digital experiences.
+            </p>
+            <div class="tech-badges">
+              <span class="badge bg-primary-light">HTML/CSS</span>
+              <span class="badge bg-primary-light">JavaScript</span>
+              <span class="badge bg-primary-light">Bootstrap</span>
+              <span class="badge bg-primary-light">vue.js</span>
+              <span class="badge bg-primary-light">PHP</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-cards">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Education</h5>
+                  <p class="card-text text-muted">Web Computing</p>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Focus Areas</h5>
+                  <p class="card-text text-muted">
+                    Frontend Development,Vue.js Development
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Location</h5>
+                  <p class="card-text text-muted">Palestine</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-description">
+              Here are some of my recent projects showcasing different aspects
+              of web development, from interactive components to full-stack
+              applications.
+            </p>
+          </div>
+        </div>
+        <div class="row" id="projectsContainer">
+          <!-- Projects will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-description">
+              Technologies and tools I work with to bring ideas to life
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="row" id="skillsContainer">
+              <!-- Skills will be dynamically loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-description">
+              Ready to work together? Let's discuss your next project
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="contact-info">
+              <h3 class="mb-4">Contact Information</h3>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Email</h5>
+                  <a href="mailto:eng.mominwawi@gmail.com"
+                    >eng.mominwawi@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Phone</h5>
+                  <a href="tel:+970597908665">+970 597 908 665</a>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="mb-4">Let's Connect</h3>
+                <p class="text-muted mb-4">
+                  I'm always interested in new opportunities and collaborations.
+                  Whether you have a project in mind or just want to chat about
+                  web development, feel free to reach out!
+                </p>
+                <div class="social-links">
+                  <a
+                    href="https://github.com/MominAL-wawi"
+                    class="btn btn-outline-primary btn-sm me-2"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github me-2"></i>GitHub
+                  </a>
+                  <a href="#" class="btn btn-outline-primary btn-sm">
+                    <i class="fab fa-linkedin me-2"></i>LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title mb-0">Send a Message</h4>
+                <p class="card-text text-muted">
+                  Fill out the form below and I'll get back to you as soon as
+                  possible
+                </p>
+              </div>
+              <div class="card-body">
+                <form id="contactForm">
+                  <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="your.email@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Project inquiry"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      rows="4"
+                      placeholder="Tell me about your project..."
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+      <div class="container">
+        <p class="mb-0">
+          © 2024 Momin Ahmed Rezg Alwawi. Built with HTML, CSS, JavaScript,
+          Bootstrap and lots of ☕
+        </p>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
