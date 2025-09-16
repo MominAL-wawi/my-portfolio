@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Film Project",
       description:
         "Movie database and review platform with search and filtering features",
-      url: "filmprojectwithvue.netlify.app",
+      url: "https://filmprojectwithvue.netlify.app/",
       tech: ["HTML", "CSS", "JavaScript", "API"],
       category: "Web App",
     },
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "Web App",
     },
   ];
-
+ 
   // Skills data
   const skills = [
     { name: "HTML/CSS", level: 95 },
