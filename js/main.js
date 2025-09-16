@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Film Project",
       description:
         "Movie database and review platform with search and filtering features",
-      url: "https://filmproject1.netlify.app",
+      url: "filmprojectwithvue.netlify.app",
       tech: ["HTML", "CSS", "JavaScript", "API"],
       category: "Web App",
     },
