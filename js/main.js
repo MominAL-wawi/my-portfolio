@@ -1,81 +1,49 @@
 // Portfolio JavaScript
 document.addEventListener("DOMContentLoaded", () => {
   // Projects data
-  const projects = [
-    {
-      title: "Active Card",
-      description:
-        "Interactive card component with modern animations and responsive design",
-      url: "https://project-activcard.netlify.app",
-      tech: ["HTML", "CSS", "JavaScript"],
-      category: "Frontend",
-    },
-    {
-      title: "Crispy Restaurant",
-      description:
-        "Modern restaurant website with menu showcase and online ordering system",
-      url: "https://project-crispy-restaurant.netlify.app",
-      tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      category: "Web Design",
-    },
-    {
-      title: "CRUDS System",
-      description:
-        "Complete CRUD operations system with data management functionality",
-      url: "https://project-cruds.netlify.app",
-      tech: ["JavaScript", "HTML", "CSS", "LocalStorage"],
-      category: "Web App",
-    },
-    {
-      title: "CSS Assignment",
-      description:
-        "Advanced CSS techniques showcase with animations and layouts",
-      url: "https://project-css-assign.netlify.app",
-      tech: ["HTML", "CSS", "Flexbox", "Grid"],
-      category: "Frontend",
-    },
-    {
-      title: "Tiavelia Travel",
-      description:
-        "Travel booking platform with destination showcase and booking system",
-      url: "https://frontend-project-tiavelia.netlify.app",
-      tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      category: "Web Design",
-    },
-    {
-      title: "Internet Speed Test",
-      description:
-        "Real-time internet speed testing application with performance metrics",
-      url: "https://project-test-internet.netlify.app",
-      tech: ["JavaScript", "HTML", "CSS", "API"],
-      category: "Web App",
-    },
-    {
-      title: "Film Project",
-      description:
-        "Movie database and review platform with search and filtering features",
-      url: "https://filmprojectwithvue.netlify.app/",
-      tech: ["HTML", "CSS", "JavaScript", "API"],
-      category: "Web App",
-    },
-     {
-      title: "Taqwa portfolio",
-      description:
-        "Taqwa Portfolio is a modern personal website showcasing Tqwa’s profile, skills, and projects professionally.",
-      url: "http://tqwaportfolio-project.netlify.app",
-      tech: ["HTML", "CSS", "JavaScript", "vue.js"],
-      category: "Web App",
-    },
-    {
-      title: "Network Calculator",
-      description:
-        "Calculate Network ID, Broadcast, and IP addresses using FLSM and VLSM.",
-      url: "https://project-network-calculator.netlify.app/",
-      tech: ["HTML", "CSS", "JavaScript", "vue.js"],
-      category: "Web App",
-    },
-  ];
- 
+  let projects = [];
+  const container = document.getElementById("projectsContainer");
+
+  fetch("../data.json")
+    .then((res) => res.json())
+    .then((data) => {
+      projects = data;
+      renderProjects();
+    });
+
+  function renderProjects() {
+    container.innerHTML = "";
+
+    projects.forEach((project) => {
+      const col = document.createElement("div");
+      col.className = "col-lg-4 col-md-6 mb-4";
+
+      col.innerHTML = `
+      <div class="card project-card h-100" onclick="window.open('${
+        project.url
+      }', '_blank')">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span class="badge bg-secondary">${project.category}</span>
+          <i class="fas fa-external-link-alt text-muted"></i>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">${project.title}</h5>
+          <p class="card-text flex-grow-1">${project.description}</p>
+          <div class="tech-badges mb-3">
+            ${project.tech
+              .map((tech) => `<span class="badge bg-primary">${tech}</span>`)
+              .join(" ")}
+          </div>
+          <button class="btn btn-primary w-100" onclick="window.open('${
+            project.url
+          }', '_blank')">View Project</button>
+        </div>
+      </div>
+    `;
+
+      container.appendChild(col);
+    });
+  }
   // Skills data
   const skills = [
     { name: "HTML/CSS", level: 95 },
@@ -87,41 +55,41 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   // Render projects
-  function renderProjects() {
-    const container = document.getElementById("projectsContainer");
-    container.innerHTML = "";
+  // function renderProjects() {
+  //   const container = document.getElementById("projectsContainer");
+  //   container.innerHTML = "";
 
-    projects.forEach((project) => {
-      const projectCard = `
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card project-card h-100" onclick="window.open('${
-                      project.url
-                    }', '_blank')">
-                        <div class="card-header d-flex justify-content-between align-items-center">
-                            <span class="badge bg-secondary">${
-                              project.category
-                            }</span>
-                            <i class="fas fa-external-link-alt text-muted"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">${project.title}</h5>
-                            <p class="card-text">${project.description}</p>
-                            <div class="tech-badges mb-3">
-                                ${project.tech
-                                  .map(
-                                    (tech) =>
-                                      `<span class="badge bg-primary-light">${tech}</span>`
-                                  )
-                                  .join("")}
-                            </div>
-                            <button class="btn btn-primary w-100">View Project</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-      container.innerHTML += projectCard;
-    });
-  }
+  //   projects.forEach((project) => {
+  //     const projectCard = `
+  //               <div class="col-lg-4 col-md-6 mb-4">
+  //                   <div class="card project-card h-100" onclick="window.open('${
+  //                     project.url
+  //                   }', '_blank')">
+  //                       <div class="card-header d-flex justify-content-between align-items-center">
+  //                           <span class="badge bg-secondary">${
+  //                             project.category
+  //                           }</span>
+  //                           <i class="fas fa-external-link-alt text-muted"></i>
+  //                       </div>
+  //                       <div class="card-body">
+  //                           <h5 class="card-title">${project.title}</h5>
+  //                           <p class="card-text">${project.description}</p>
+  //                           <div class="tech-badges mb-3">
+  //                               ${project.tech
+  //                                 .map(
+  //                                   (tech) =>
+  //                                     `<span class="badge bg-primary-light">${tech}</span>`
+  //                                 )
+  //                                 .join("")}
+  //                           </div>
+  //                           <button class="btn btn-primary w-100">View Project</button>
+  //                       </div>
+  //                   </div>
+  //               </div>
+  //           `;
+  //     container.innerHTML += projectCard;
+  //   });
+  // }
 
   // Render skills
   function renderSkills() {
