@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Active Card",
+    "description": "Interactive card component with modern animations and responsive design",
+    "url": "https://project-activcard.netlify.app",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "category": "Frontend"
+  },
+  {
+    "title": "Crispy Restaurant",
+    "description": "Modern restaurant website with menu showcase and online ordering system",
+    "url": "https://project-crispy-restaurant.netlify.app",
+    "tech": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    "category": "Web Design"
+  },
+  {
+    "title": "CRUDS System",
+    "description": "Complete CRUD operations system with data management functionality",
+    "url": "https://project-cruds.netlify.app",
+    "tech": ["JavaScript", "HTML", "CSS", "LocalStorage"],
+    "category": "Web App"
+  },
+  {
+    "title": "CSS Assignment",
+    "description": "Advanced CSS techniques showcase with animations and layouts",
+    "url": "https://project-css-assign.netlify.app",
+    "tech": ["HTML", "CSS", "Flexbox", "Grid"],
+    "category": "Frontend"
+  },
+  {
+    "title": "Tiavelia Travel",
+    "description": "Travel booking platform with destination showcase and booking system",
+    "url": "https://frontend-project-tiavelia.netlify.app",
+    "tech": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    "category": "Web Design"
+  },
+  {
+    "title": "Internet Speed Test",
+    "description": "Real-time internet speed testing application with performance metrics",
+    "url": "https://project-test-internet.netlify.app",
+    "tech": ["JavaScript", "HTML", "CSS", "API"],
+    "category": "Web App"
+  },
+  {
+    "title": "Film Project",
+    "description": "Movie database and review platform with search and filtering features",
+    "url": "https://filmprojectwithvue.netlify.app/",
+    "tech": ["HTML", "CSS", "JavaScript", "API"],
+    "category": "Web App"
+  },
+  {
+    "title": "Taqwa portfolio",
+    "description": "Taqwa Portfolio is a modern personal website showcasing Tqwa’s profile, skills, and projects professionally.",
+    "url": "http://tqwaportfolio-project.netlify.app",
+    "tech": ["HTML", "CSS", "JavaScript", "vue.js"],
+    "category": "Web App"
+  },
+  {
+    "title": "Network Calculator",
+    "description": "Calculate Network ID, Broadcast, and IP addresses using FLSM and VLSM.",
+    "url": "https://project-network-calculator.netlify.app/",
+    "tech": ["HTML", "CSS", "JavaScript", "vue.js"],
+    "category": "Web App"
+  }
+]
