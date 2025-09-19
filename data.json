@@ -7,6 +7,13 @@
     "category": "Frontend"
   },
   {
+    "title": "Active Card",
+    "description": "Interactive card component with modern animations and responsive design",
+    "url": "https://project-activcard.netlify.app",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "category": "Frontend"
+  },
+  {
     "title": "Crispy Restaurant",
     "description": "Modern restaurant website with menu showcase and online ordering system",
     "url": "https://project-crispy-restaurant.netlify.app",
@@ -63,3 +70,4 @@
     "category": "Web App"
   }
 ]
+
