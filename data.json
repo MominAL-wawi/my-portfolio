@@ -1,5 +1,33 @@
 [
   {
+    "title": "crud-project-withvue-api",
+    "description": "A web app CRUD project built with VueJS and an API that allows easy creation, updating, deletion, and viewing of data.",
+    "url": "https://crud-project-withvue-api.netlify.app/",
+    "tech": ["HTML", "CSS", "JavaScript", "API", "VueJS"],
+    "category": "Web App"
+  },
+  {
+    "title": "Film Project",
+    "description": "Movie database and review platform with search and filtering features",
+    "url": "https://filmprojectwithvue.netlify.app/",
+    "tech": ["HTML", "CSS", "JavaScript", "API"],
+    "category": "Web App"
+  },
+  {
+    "title": "Taqwa portfolio",
+    "description": "Taqwa Portfolio is a modern personal website showcasing Tqwa’s profile, skills, and projects professionally.",
+    "url": "http://tqwaportfolio-project.netlify.app",
+    "tech": ["HTML", "CSS", "JavaScript", "vue.js"],
+    "category": "Web App"
+  },
+  {
+    "title": "Network Calculator",
+    "description": "Calculate Network ID, Broadcast, and IP addresses using FLSM and VLSM.",
+    "url": "https://project-network-calculator.netlify.app/",
+    "tech": ["HTML", "CSS", "JavaScript", "vue.js"],
+    "category": "Web App"
+  },
+  {
     "title": "Active Card",
     "description": "Interactive card component with modern animations and responsive design",
     "url": "https://project-activcard.netlify.app",
@@ -40,28 +68,5 @@
     "url": "https://project-test-internet.netlify.app",
     "tech": ["JavaScript", "HTML", "CSS", "API"],
     "category": "Web App"
-  },
-  {
-    "title": "Film Project",
-    "description": "Movie database and review platform with search and filtering features",
-    "url": "https://filmprojectwithvue.netlify.app/",
-    "tech": ["HTML", "CSS", "JavaScript", "API"],
-    "category": "Web App"
-  },
-  {
-    "title": "Taqwa portfolio",
-    "description": "Taqwa Portfolio is a modern personal website showcasing Tqwa’s profile, skills, and projects professionally.",
-    "url": "http://tqwaportfolio-project.netlify.app",
-    "tech": ["HTML", "CSS", "JavaScript", "vue.js"],
-    "category": "Web App"
-  },
-  {
-    "title": "Network Calculator",
-    "description": "Calculate Network ID, Broadcast, and IP addresses using FLSM and VLSM.",
-    "url": "https://project-network-calculator.netlify.app/",
-    "tech": ["HTML", "CSS", "JavaScript", "vue.js"],
-    "category": "Web App"
   }
 ]
-
-
