@@ -1,5 +1,12 @@
 [
   {
+    "title": "Electronics Store",
+    "description": "Electronics Store is an e-commerce web app for browsing and purchasing electronic products with a modern interface and Firebase integration.",
+    "url": "http://electronics-store-project-w-momin.netlify.app",
+    "tech": ["Vue.js", "HTML", "CSS", "JavaScript", "Firebase"],
+    "category": "Web App"
+  },
+  {
     "title": "crud-project-withvue-api",
     "description": "A web app CRUD project built with VueJS and an API that allows easy creation, updating, deletion, and viewing of data.",
     "url": "https://crud-project-withvue-api.netlify.app/",
