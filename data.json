@@ -1,5 +1,12 @@
 [
   {
+    "title": "Memory Matching Game",
+    "description": "Interactive memory card game that challenges players to match pairs using logic and focus.",
+    "url": "https://memory-matching-game-project.netlify.app",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "category": "Web Game"
+  },
+  {
     "title": "Electronics Store",
     "description": "Electronics Store is an e-commerce web app for browsing and purchasing electronic products with a modern interface and Firebase integration.",
     "url": "http://electronics-store-project-w-momin.netlify.app",
