@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momin Ahmed Rezg Alwawi - Portfolio</title>
+    <title>Momin Ahmed Rezq Alwawi - Front-End Developer Portfolio</title>
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/all.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand fw-black" href="#">Momin Alwawi</a>
+        <a class="navbar-brand" href="#">Momin Alwawi</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -36,6 +36,12 @@
               <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -43,102 +49,118 @@
       </div>
     </nav>
 
+    <!-- Added scroll progress indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Hero Section -->
     <section id="home" class="hero-section">
       <div class="container">
-        <div class="row align-items-center min-vh-100">
+        <div class="row align-items-center">
           <div class="col-lg-6">
-            <div class="hero-content animate-fade-in-up">
+            <div class="hero-content">
+              <!-- Added typing effect to title -->
               <h1 class="hero-title">
-                Hi, I'm <span class="text-primary">Momin Ahmed</span>
+                Hi, I'm
+                <span class="text-primary gradient-text typing-effect"
+                  >Momin Ahmed</span
+                >
               </h1>
-              <p class="hero-subtitle">
-                Web Computing Graduate & Full-Stack Developer
-              </p>
+              <h2 class="hero-subtitle">Front-End Developer</h2>
               <p class="hero-description">
-                Passionate about creating modern, responsive web applications
-                with clean code and exceptional user experiences. Specialized in
-                frontend technologies with a growing expertise in full-stack
-                development.
+                Top-ranked graduate (GPA 92%) in Web Computing from the Islamic
+                University of Gaza. I specialize in building modern and
+                interactive user interfaces using HTML5, CSS3, JavaScript
+                (ES6+), and Vue.js. Passionate about creating responsive,
+                high-performance web applications that deliver exceptional user
+                experiences.
               </p>
               <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary btn-lg me-3"
-                  >View My Work</a
-                >
-                <a href="#contact" class="btn btn-outline-primary btn-lg"
-                  >Get In Touch</a
-                >
+                <a href="#projects" class="btn btn-primary">
+                  View My Work
+                  <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline-primary">
+                  Contact Me
+                </a>
               </div>
             </div>
           </div>
           <div class="col-lg-6 text-center">
-            <div class="hero-image">
-              <div class="profile-image-container">
-                <img
-                  src="css/img/100.jpg"
-                  alt="Momin Ahmed Rezg Alwawi"
-                  class="profile-image"
-                />
-                <div class="profile-badge">
-                  <span>Web Dev</span>
-                </div>
-              </div>
-            </div>
+            <!-- Fixed image path to be in img folder, not css folder -->
+            <img
+              src="css/img/100.jpg"
+              alt="Momin Ahmed Rezq Alwawi"
+              class="profile-image"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
+    <section id="about" class="bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center mb-5">
-            <h2 class="section-title">About Me</h2>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <p class="lead mb-4">
-              I'm a Web Computing graduate with a passion for creating
-              innovative web solutions. My journey in web development has
-              equipped me with a comprehensive understanding of both frontend
-              and backend technologies.
-            </p>
-            <p class="mb-4">
-              I specialize in building responsive, user-friendly applications
-              using modern frameworks and best practices. My goal is to bridge
-              the gap between design and functionality, creating seamless
-              digital experiences.
-            </p>
-            <div class="tech-badges">
-              <span class="badge bg-primary-light">HTML/CSS</span>
-              <span class="badge bg-primary-light">JavaScript</span>
-              <span class="badge bg-primary-light">Bootstrap</span>
-              <span class="badge bg-primary-light">vue.js</span>
-              <span class="badge bg-primary-light">PHP</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-description">
+          Front-End Developer passionate about crafting beautiful and scalable
+          digital solutions
+        </p>
+
+        <div class="row mt-5">
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="mb-4">
+                  <i class="fas fa-user-tie text-primary me-2"></i>
+                  Professional Summary
+                </h3>
+                <p class="text-secondary">
+                  I am a Front-End Developer specialized in building modern and
+                  interactive user interfaces using HTML5, CSS3, JavaScript
+                  (ES6+), and Vue.js. I am proficient in Pinia state management,
+                  with experience in creating responsive designs and integrating
+                  with REST APIs.
+                </p>
+                <p class="text-secondary mb-0">
+                  I have strong experience in developing e-commerce stores using
+                  Vue.js and Firebase, and I am skilled in PHP, WordPress, and
+                  databases (MySQL and SQL Server), enabling me to work on
+                  full-stack projects that combine both front-end and back-end
+                  development.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="about-cards">
-              <div class="card mb-3">
-                <div class="card-body">
-                  <h5 class="card-title">Education</h5>
-                  <p class="card-text text-muted">Web Computing</p>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="mb-4">
+                  <i class="fas fa-info-circle text-primary me-2"></i>
+                  Personal Information
+                </h3>
+                <div class="mb-3">
+                  <strong>Name:</strong> Momin Ahmed Rezq Alwawi
                 </div>
-              </div>
-              <div class="card mb-3">
-                <div class="card-body">
-                  <h5 class="card-title">Focus Areas</h5>
-                  <p class="card-text text-muted">
-                    Frontend Development,Vue.js Development
-                  </p>
+                <div class="mb-3">
+                  <strong>Email:</strong>
+                  <a href="mailto:eng.mominwawi@gmail.com"
+                    >eng.mominwawi@gmail.com</a
+                  >
                 </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Location</h5>
-                  <p class="card-text text-muted">Palestine</p>
+                <div class="mb-3">
+                  <strong>Phone:</strong>
+                  <a href="tel:+970597908665">+970 597 908 665</a>
+                </div>
+                <div class="mb-3">
+                  <strong>Location:</strong> Gaza Strip, Palestine
+                </div>
+                <div class="mb-3">
+                  <strong>Education:</strong> Bachelor's in Web Computing<br />
+                  <small class="text-muted"
+                    >Islamic University of Gaza | GPA 92% | First in
+                    Class</small
+                  >
                 </div>
               </div>
             </div>
@@ -148,18 +170,14 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5">
+    <section id="projects">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center mb-5">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-description">
-              Here are some of my recent projects showcasing different aspects
-              of web development, from interactive components to full-stack
-              applications.
-            </p>
-          </div>
-        </div>
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-description">
+          Here are some of my recent projects showcasing different aspects of
+          web development, from interactive components to full-stack
+          applications with Vue.js, Firebase, and modern web technologies.
+        </p>
         <div class="row" id="projectsContainer">
           <!-- Projects will be dynamically loaded here -->
         </div>
@@ -167,16 +185,12 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
+    <section id="skills" class="bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center mb-5">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <p class="section-description">
-              Technologies and tools I work with to bring ideas to life
-            </p>
-          </div>
-        </div>
+        <h2 class="section-title fade-in">Skills & Expertise</h2>
+        <p class="section-description fade-in">
+          Technologies and tools I work with to bring ideas to life
+        </p>
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <div class="row" id="skillsContainer">
@@ -187,17 +201,130 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <!-- Education Section -->
+    <section id="education">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center mb-5">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-description">
-              Ready to work together? Let's discuss your next project
-            </p>
+        <h2 class="section-title fade-in">Education</h2>
+        <p class="section-description fade-in">
+          Academic background and achievements
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="education-card card slide-in-left">
+              <div class="card-body">
+                <div class="d-flex align-items-start">
+                  <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div
+                      class="d-flex justify-content-between align-items-start mb-2"
+                    >
+                      <div>
+                        <h3 class="mb-1">Bachelor's Degree in Web Computing</h3>
+                        <h5 class="text-primary mb-2">
+                          Islamic University of Gaza
+                        </h5>
+                      </div>
+                      <span class="badge bg-success">2024</span>
+                    </div>
+                    <div class="achievement-highlight">
+                      <i class="fas fa-trophy text-warning me-2"></i>
+                      <strong>Graduated First in Class</strong>
+                    </div>
+                    <div class="gpa-display">
+                      <span class="gpa-label">GPA:</span>
+                      <span class="gpa-value">92%</span>
+                    </div>
+                    <p class="text-secondary mt-3 mb-0">
+                      Specialized in modern web technologies, software
+                      engineering principles, and full-stack development.
+                      Completed comprehensive coursework in data structures,
+                      algorithms, database management, and web application
+                      development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="bg-light">
+      <div class="container">
+        <h2 class="section-title fade-in">Certifications</h2>
+        <p class="section-description fade-in">
+          Professional development and continuous learning
+        </p>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="certification-card card slide-in-right">
+              <div class="card-body">
+                <div class="cert-header">
+                  <div class="cert-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Front-End Development Course</h4>
+                    <p class="text-primary mb-0">Elzero Web School</p>
+                  </div>
+                </div>
+                <div class="cert-details">
+                  <p class="text-secondary mb-2">
+                    Comprehensive front-end development training covering HTML5,
+                    CSS3, JavaScript ES6+, and modern web development practices.
+                  </p>
+                  <div class="cert-badge">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>Completed all assignments & projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div
+              class="certification-card card slide-in-right"
+              style="animation-delay: 0.2s"
+            >
+              <div class="card-body">
+                <div class="cert-header">
+                  <div class="cert-icon">
+                    <i class="fab fa-git-alt"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Git & GitHub Essentials Course</h4>
+                    <p class="text-primary mb-0">Professional Certification</p>
+                  </div>
+                </div>
+                <div class="cert-details">
+                  <p class="text-secondary mb-2">
+                    Mastered version control systems, collaborative development
+                    workflows, branching strategies, and best practices for
+                    team-based projects.
+                  </p>
+                  <div class="cert-badge">
+                    <i class="fas fa-check-circle text-success me-2"></i>
+                    <span>Certified Professional</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-description">
+          Ready to work together? Let's discuss your next project
+        </p>
         <div class="row">
           <div class="col-lg-6 mb-4">
             <div class="contact-info">
@@ -222,23 +349,31 @@
                   <a href="tel:+970597908665">+970 597 908 665</a>
                 </div>
               </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Location</h5>
+                  <p class="text-muted mb-0">Gaza Strip, Palestine</p>
+                </div>
+              </div>
               <div class="mt-4">
-                <h3 class="mb-4">Let's Connect</h3>
-                <p class="text-muted mb-4">
-                  I'm always interested in new opportunities and collaborations.
-                  Whether you have a project in mind or just want to chat about
-                  web development, feel free to reach out!
-                </p>
-                <div class="social-links">
+                <h3 class="mb-3">Connect With Me</h3>
+                <div class="d-flex gap-2">
                   <a
                     href="https://github.com/MominAL-wawi"
-                    class="btn btn-outline-primary btn-sm me-2"
+                    class="btn btn-outline-primary"
                     target="_blank"
                   >
                     <i class="fab fa-github me-2"></i>GitHub
                   </a>
-                  <a href="#" class="btn btn-outline-primary btn-sm">
-                    <i class="fab fa-linkedin me-2"></i>LinkedIn
+                  <a
+                    href="https://momin-portfolio-project.netlify.app/"
+                    class="btn btn-outline-primary"
+                    target="_blank"
+                  >
+                    <i class="fas fa-globe me-2"></i>Portfolio
                   </a>
                 </div>
               </div>
@@ -246,19 +381,15 @@
           </div>
           <div class="col-lg-6">
             <div class="card">
-              <div class="card-header">
-                <h4 class="card-title mb-0">Send a Message</h4>
-                <p class="card-text text-muted">
-                  Fill out the form below and I'll get back to you as soon as
-                  possible
-                </p>
-              </div>
               <div class="card-body">
+                <h4 class="mb-3">Send a Message</h4>
+                <!-- Updated form with name attributes for email functionality -->
                 <form id="contactForm">
                   <div class="mb-3">
                     <label class="form-label">Name</label>
                     <input
                       type="text"
+                      name="name"
                       class="form-control"
                       placeholder="Your name"
                       required
@@ -268,6 +399,7 @@
                     <label class="form-label">Email</label>
                     <input
                       type="email"
+                      name="email"
                       class="form-control"
                       placeholder="your.email@example.com"
                       required
@@ -277,6 +409,7 @@
                     <label class="form-label">Subject</label>
                     <input
                       type="text"
+                      name="subject"
                       class="form-control"
                       placeholder="Project inquiry"
                       required
@@ -285,6 +418,7 @@
                   <div class="mb-3">
                     <label class="form-label">Message</label>
                     <textarea
+                      name="message"
                       class="form-control"
                       rows="4"
                       placeholder="Tell me about your project..."
@@ -292,8 +426,18 @@
                     ></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary w-100">
-                    Send Message
+                    <span id="submitText">Send Message</span>
+                    <span
+                      id="submitSpinner"
+                      class="spinner"
+                      style="display: none"
+                    ></span>
                   </button>
+                  <!-- Added success message -->
+                  <div id="successMessage" class="success-message">
+                    <i class="fas fa-check-circle me-2"></i>
+                    Message sent successfully! I'll get back to you soon.
+                  </div>
                 </form>
               </div>
             </div>
@@ -303,14 +447,20 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-white text-center">
+    <footer class="text-center">
       <div class="container">
         <p class="mb-0">
-          © 2024 Momin Ahmed Rezg Alwawi. Built with HTML, CSS, JavaScript,
+          © 2025 Momin Ahmed Rezq Alwawi. Built with HTML, CSS, JavaScript,
           Bootstrap and lots of ☕
         </p>
       </div>
     </footer>
+
+    <!-- Added back to top button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
