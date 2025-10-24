@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fallback data to prevent "Unable to load projects" error
   const fallbackProjects = [
-     {
+    {
       title: "Al Ostaz Platform",
       description:
         "A modern educational platform that allows students to easily browse and hire qualified teachers. Includes advanced filtering, responsive UI, and optimized performance for seamless user experience.",
