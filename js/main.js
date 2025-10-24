@@ -85,6 +85,14 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "Frontend",
     },
     {
+      title: "Al Ostaz Platform",
+      description:
+        "A modern educational platform that allows students to easily browse and hire qualified teachers. Includes advanced filtering, responsive UI, and optimized performance for seamless user experience.",
+      url: "https://project-alostaz.netlify.app",
+      tech: ["Vue.js", "HTML", "CSS", "JavaScript"],
+      category: "Frontend",
+    },
+    {
       title: "Tiavelia Travel",
       description:
         "Travel booking platform with destination showcase and booking system",
