@@ -1,4 +1,10 @@
-[
+{
+    "title": "Al Ostaz Platform",
+    "description": "A modern educational platform that allows students to easily browse and hire qualified teachers. Includes advanced filtering, responsive UI, and optimized performance for seamless user experience.",
+    "url": "https://project-alostaz.netlify.app",
+    "tech": ["Vue.js", "HTML", "CSS", "JavaScript"],
+    "category": "Frontend"
+  },
   {
     "title": "Memory Matching Game",
     "description": "Interactive memory card game that challenges players to match pairs using logic and focus.",
@@ -83,4 +89,3 @@
     "tech": ["JavaScript", "HTML", "CSS", "API"],
     "category": "Web App"
   }
-]
